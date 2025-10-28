@@ -2,15 +2,13 @@ name: Trakt Sync
 
 on:
   schedule:
-    # Run every hour at minute 0
     - cron: '0 * * * *'
-  # Allow manual triggers
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
