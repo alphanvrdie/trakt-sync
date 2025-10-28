@@ -2,9 +2,7 @@ name: Trakt Sync
 
 on:
   schedule:
-    # Run every hour at minute 0
     - cron: '0 * * * *'
-  # Allow manual triggers
   workflow_dispatch:
 
 jobs:
