@@ -1,0 +1,9 @@
+{
+  "name": "trakt-sync-automated",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "auto-sync": "node sync-auto.mjs auto-sync",
+    "status": "node sync-auto.mjs status"
+  }
+}

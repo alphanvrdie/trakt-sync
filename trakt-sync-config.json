@@ -1,0 +1,14 @@
+{
+  "simkl_client_id": "c92e0b73fa236cc1405ed8ac85bdadeb4abc3944f1ff42b3cb7944da341cc3ef",
+  "trakt_client_id": "0af6a78eb7f06d54a1f1391f28d6ca98a55924c8bc85a7959556b6b3d5158052",
+  "trakt_client_secret": "dc9747850cb0ebded2e3ace0732cde3e4eb67e97f27eab26dbc491e2a68dd993",
+  "simkl_access_token": "57f3aec0996fdcaf72469dea0fe959fa57a2ed75b2aa41365d8b29097d32a235",
+  "trakt_tokens": {
+    "access_token": "8a7eedbe32341d6414a36f67d429b5de3fe7f239aa8f004e575d34da7a58d56f",
+    "token_type": "bearer",
+    "expires_in": 604800,
+    "refresh_token": "77f47898c67db66b09e948dec284b8ec48b640c30f6cffbb5a224f2446206d42",
+    "scope": "public",
+    "created_at": 1761679422
+  }
+}

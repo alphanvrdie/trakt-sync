@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  trakt-sync:
+    build: .
+    container_name: trakt-sync
+    volumes:
+      - ./config:/app/config
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: >
+      sh -c "
+        echo '🚀 Trakt Sync Container Started' &&
+        echo '⏰ Will run sync every hour' &&
+        while true; do
+          echo '=== Starting sync cycle: $(date) ===' >> /app/logs/loop.log &&
+          node sync-auto.mjs auto-sync >> /app/logs/sync.log 2>&1 &&
+          echo '=== Sync completed successfully: $(date) ===' >> /app/logs/loop.log &&
+          echo '💤 Waiting 1 hour until next sync...' >> /app/logs/loop.log &&
+          sleep 3600
+        done
+      "
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
