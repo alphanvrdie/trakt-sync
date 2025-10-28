@@ -80,8 +80,6 @@ class GitHubSync {
         if (response.ok) {
             this.config.trakt_tokens = await response.json();
             console.log('✅ Trakt token refreshed.');
-            // Note: In GitHub Actions, we can't persist the token automatically
-            // You'll need to manually update the secret when this happens
             console.log('⚠️  Please update TRAKT_TOKENS secret in GitHub with new tokens');
         } else {
             throw new Error('Failed to refresh Trakt token');
