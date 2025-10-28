@@ -1,3 +1,6 @@
 === Starting sync cycle: $(date) ===
 === Sync completed successfully: $(date) ===
 💤 Waiting 1 hour until next sync...
+=== Starting sync cycle: $(date) ===
+=== Sync completed successfully: $(date) ===
+💤 Waiting 1 hour until next sync...
